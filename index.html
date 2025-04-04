@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+        <meta name="description" content="Home Page" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/style.min.css" />
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./assets/js/script.min.js"></script>
+    </head>
+    <body>
+        
+        <header class="header" data-active="home">
+            <div class="menu-wrapper">
+                <div class="header__mobile">
+                    <div class="header__mobile-inner">
+                        <nav class="header__mobile-nav">
+                            <ul class="header__mobile-list">
+                                <li class="header__mobile-item">
+                                    <a class="header__mobile-link" href="#!">Home</a>
+                                </li>
+                                <li class="header__mobile-item">
+                                    <a class="header__mobile-link" href="#!"
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li class="header__mobile-item">
+                                    <a class="header__mobile-link" href="#!">Bonus</a>
+                                </li>
+                                <li class="header__mobile-item">
+                                    <a class="header__mobile-link" href="#!">Demo</a>
+                                </li>
+                                <li class="header__mobile-item">
+                                    <a class="header__mobile-link" href="#!">Contact</a>
+                                </li>
+                                <li class="header__mobile-item">
+                                    <a class="header__mobile-link" href="#!">FAQs</a>
+                                </li>
+                                <li class="header__mobile-item">
+                                    <a class="header__mobile-link" href="#!">Blog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__logo">
+                    <img src="./assets/images/icons/dr-logo.webp" alt="Logo" />
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#!" class="header__list-link" data-page="home"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__list-link">About Us</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__list-link">Bonus</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__list-link">Demo</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__list-link">Contact</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__list-link">FAQs</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__list-link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#!" class="header__link">Play</a>
+                <button class="header__burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <script>
+                    const mobBtn = document.querySelector('.header__burger');
+                    mobBtn.addEventListener('click', () => {
+                        mobBtn.classList.toggle('active');
+                        document
+                            .querySelector('.menu-wrapper')
+                            .classList.toggle('shown');
+                    });
+                </script>
+            </div>
+        </header>
+        
+        <main class="main page--home">
+            <section class="intro">
+                <div class="container">
+                    <h1 class="intro__title">
+                        Welcome to the Ultimate Dragon Tiger Experience!
+                    </h1>
+                    <p class="intro__description">
+                        Are you ready to dive into the thrilling world of
+                        <a href="#!">Dragon Tiger?</a> Whether you’re a seasoned player
+                        or just starting your journey, our platform offers the perfect
+                        environment for every type of gamer. Get ready to experience
+                        excitement, adrenaline, and the chance to win big, all while
+                        enjoying an intuitive and secure platform.
+                    </p>
+                    <a href="#!" class="intro__link">Play</a>
+                </div>
+            </section>
+            <div class="faqs">
+                <div class="container">
+                    <div class="faqs__wrapper shown">
+                        <div class="faqs__head">
+                            <p>Table of Contents</p>
+                            <span>
+                                <img
+                                    src="./assets/images/icons/ico-faqs.png"
+                                    alt="Show"
+                                />
+                            </span>
+                        </div>
+                        <div class="faqs__content">
+                            <div class="faqs__inner">
+                                <ul class="faqs__content-list">
+                                    <li class="faqs__content-item">
+                                        <a href="#!">1. title</a>
+                                    </li>
+                                    <li class="faqs__content-item">
+                                        <a href="#!">2. title</a>
+                                    </li>
+                                    <li class="faqs__content-item item--pl">
+                                        <a href="#!">2.1 title</a>
+                                    </li>
+                                    <li class="faqs__content-item item--pl">
+                                        <a href="#!">2.2 title</a>
+                                    </li>
+                                    <li class="faqs__content-item item--pl">
+                                        <a href="#!">2.3 title</a>
+                                    </li>
+                                    <li class="faqs__content-item">
+                                        <a href="#!">3. title</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <script>
+                            const faqInfo = document.querySelector('.faqs__wrapper');
+                            faqInfo.addEventListener('click', () => {
+                                faqInfo.classList.toggle('shown');
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <section class="choose">
+                <div class="container">
+                    <div class="choose__content">
+                        <div class="col">
+                            <h2 class="choose__title">Why Choose Us?</h2>
+                            <p>
+                                At Dragon Tiger, we believe in offering not just a game,
+                                but a full, immersive gaming experience that keeps you
+                                coming back for more. Our platform is built with you in
+                                mind — whether you’re on desktop or mobile, our goal is
+                                to provide you with seamless gameplay, exciting bonuses,
+                                and a secure environment where you can play with peace
+                                of mind. We focus on delivering the best user
+                                experience, so you can concentrate on enjoying every
+                                moment of the game.
+                            </p>
+        
+                            <p>
+                                We’ve made sure that Dragon Tiger is accessible to
+                                everyone, from beginners to seasoned players. The rules
+                                are simple, the gameplay is fast and thrilling, and with
+                                each round, you’ll feel the rush of excitement as you
+                                place your bets and make your moves. We’ve designed the
+                                platform to be intuitive and easy to navigate, so
+                                whether you’re playing for fun or aiming for real wins,
+                                you’ll never feel lost.
+                            </p>
+        
+                            <p>
+                                Our mission is to create a space where players can enjoy
+                                Dragon Tiger to the fullest, without worrying about
+                                security or complex rules. We’ve simplified the process,
+                                giving you the opportunity to focus solely on the fun
+                                and thrill of the game! No more distractions, no more
+                                barriers—just pure gaming pleasure.
+                            </p>
+        
+                            <p>
+                                But we don’t stop there! We continually update our
+                                platform with fresh features, exclusive bonuses, and new
+                                promotions to keep the excitement alive. Our goal is not
+                                just to provide an excellent gaming experience, but to
+                                build a community of passionate players who share the
+                                same love for Dragon Tiger.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img
+                                src="./assets/images/thumb-choose.webp"
+                                alt="Why Choose Us?"
+                            />
+                        </div>
+                    </div>
+                    <div class="choose__inner">
+                        <table
+                            class="choose__table"
+                            dir="ltr"
+                            border="1"
+                            cellspacing="0"
+                            cellpadding="0"
+                            data-sheets-root="1"
+                            data-sheets-baot="1"
+                        >
+                            <colgroup>
+                                <col width="199" />
+                                <col width="658" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Description &amp; Benefits</td>
+                                </tr>
+                                <tr>
+                                    <td>🎮 Fast-Paced Gameplay</td>
+                                    <td>
+                                        Quick rounds of Dragon Tiger for an exhilarating
+                                        experience. Enjoy rapid wins and adrenaline!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>🔒 Secure Platform</td>
+                                    <td>
+                                        Cutting-edge encryption ensures your data is
+                                        always protected. Play with full security and
+                                        peace of mind!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>💰 Exclusive Bonuses</td>
+                                    <td>
+                                        Special bonuses, free spins, and promotions
+                                        await you. Maximize your chances to win with
+                                        exclusive rewards!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>🕒 24/7 Customer Support</td>
+                                    <td>
+                                        Our dedicated team is available 24/7 to assist
+                                        you. We&#8217;re always here to help, whenever
+                                        you need it!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>📱 Mobile-Friendly</td>
+                                    <td>
+                                        Optimized for smooth play on mobile devices.
+                                        Take the game with you wherever you go!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>🆓 Demo Mode</td>
+                                    <td>
+                                        Practice for free and improve your skills before
+                                        playing for real. Sharpen your game without any
+                                        risk!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>💳 Variety of Payment Options</td>
+                                    <td>
+                                        Multiple payment methods for easy deposits and
+                                        withdrawals. Fast, secure, and convenient
+                                        transactions!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>🧠 Expert Strategies</td>
+                                    <td>
+                                        Learn winning tips and strategies from the pros.
+                                        Master the game and boost your chances of
+                                        success!
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="creativity">
+                <div class="container">
+                    <h2 class="creativity__title">
+                        Turning Creativity Into Your Competitive Edge
+                    </h2>
+                    <div class="creativity__cards">
+                        <div class="creativity__card">
+                            <div class="creativity__card-ico">
+                                <svg
+                                    aria-hidden="true"
+                                    class="e-font-icon-svg e-far-grin"
+                                    viewBox="0 0 496 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200zm105.6-151.4c-25.9 8.3-64.4 13.1-105.6 13.1s-79.6-4.8-105.6-13.1c-9.9-3.1-19.4 5.4-17.7 15.3 7.9 47.1 71.3 80 123.3 80s115.3-32.9 123.3-80c1.6-9.8-7.7-18.4-17.7-15.3zM168 240c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32zm160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <p class="creativity__card-title">
+                                Fast and Exciting Gameplay
+                            </p>
+                            <p class="creativity__card-description">
+                                Dragon Tiger is all about speed, simplicity, and fun.
+                                With its easy-to-understand rules and fast-paced rounds,
+                                it’s the perfect game for those who enjoy high stakes
+                                and quick decisions. Whether you are looking for a quick
+                                play during your break or a deep dive into strategy,
+                                Dragon Tiger delivers every time.
+                            </p>
+                        </div>
+                        <div class="creativity__card">
+                            <div class="creativity__card-ico">
+                                <svg
+                                    aria-hidden="true"
+                                    class="e-font-icon-svg e-far-grin-hearts"
+                                    viewBox="0 0 496 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M353.6 304.6c-25.9 8.3-64.4 13.1-105.6 13.1s-79.6-4.8-105.6-13.1c-9.8-3.1-19.4 5.3-17.7 15.3 7.9 47.2 71.3 80 123.3 80s115.3-32.9 123.3-80c1.6-9.8-7.7-18.4-17.7-15.3zm-152.8-48.9c4.5 1.2 9.2-1.5 10.5-6l19.4-69.9c5.6-20.3-7.4-41.1-28.8-44.5-18.6-3-36.4 9.8-41.5 27.9l-2 7.1-7.1-1.9c-18.2-4.7-38.2 4.3-44.9 22-7.7 20.2 3.8 41.9 24.2 47.2l70.2 18.1zm188.8-65.3c-6.7-17.6-26.7-26.7-44.9-22l-7.1 1.9-2-7.1c-5-18.1-22.8-30.9-41.5-27.9-21.4 3.4-34.4 24.2-28.8 44.5l19.4 69.9c1.2 4.5 5.9 7.2 10.5 6l70.2-18.2c20.4-5.3 31.9-26.9 24.2-47.1zM248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <p class="creativity__card-title">
+                                Exclusive and Promotions
+                            </p>
+                            <p class="creativity__card-description">
+                                We value our players, and that’s why we offer an array
+                                of exciting bonuses and promotions! Whether you’re new
+                                to the platform or a returning player, there’s always a
+                                special offer waiting for you. From welcome bonuses to
+                                seasonal promotions, we make sure you get the most out
+                                of your gameplay.
+                            </p>
+                        </div>
+                        <div class="creativity__card">
+                            <div class="creativity__card-ico">
+                                <svg
+                                    aria-hidden="true"
+                                    class="e-font-icon-svg e-far-grin-wink"
+                                    viewBox="0 0 496 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M328 180c-25.69 0-55.88 16.92-59.86 42.12-1.75 11.22 11.5 18.24 19.83 10.84l9.55-8.48c14.81-13.19 46.16-13.19 60.97 0l9.55 8.48c8.48 7.43 21.56.25 19.83-10.84C383.88 196.92 353.69 180 328 180zm-160 60c17.67 0 32-14.33 32-32s-14.33-32-32-32-32 14.33-32 32 14.33 32 32 32zm185.55 64.64c-25.93 8.3-64.4 13.06-105.55 13.06s-79.62-4.75-105.55-13.06c-9.94-3.13-19.4 5.37-17.71 15.34C132.67 367.13 196.06 400 248 400s115.33-32.87 123.26-80.02c1.68-9.89-7.67-18.48-17.71-15.34zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 448c-110.28 0-200-89.72-200-200S137.72 56 248 56s200 89.72 200 200-89.72 200-200 200z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <p class="creativity__card-title">
+                                Secure and Reliable Platform
+                            </p>
+                            <p class="creativity__card-description">
+                                Your security is our top priority. We’ve implemented
+                                state-of-the-art encryption and security measures to
+                                ensure your personal data and transactions are always
+                                safe. We use the latest technologies to guarantee that
+                                your gaming experience is secure, fair, and private.
+                            </p>
+                        </div>
+                        <div class="creativity__card">
+                            <div class="creativity__card-ico">
+                                <img
+                                    src="./assets/images/icons/ico-light.png"
+                                    alt="Light"
+                                />
+                            </div>
+                            <p class="creativity__card-title">
+                                Expert Strategies and Tips
+                            </p>
+                            <p class="creativity__card-description">
+                                Not just about luck — at Dragon Tiger, we believe in the
+                                power of knowledge! Our expert tips and strategies
+                                section will help you master the game and improve your
+                                chances of winning. With simple yet effective
+                                strategies, you can enhance your gameplay, whether
+                                you're a beginner or a pro.
+                            </p>
+                        </div>
+                        <div class="creativity__card">
+                            <div class="creativity__card-ico">
+                                <img
+                                    src="./assets/images/icons/ico-diamond.png"
+                                    alt="Diamond"
+                                />
+                            </div>
+                            <p class="creativity__card-title">
+                                Join Our Global Community
+                            </p>
+                            <p class="creativity__card-description">
+                                When you play at Dragon Tiger, you’re joining a global
+                                community of like-minded players who share your passion
+                                for the game. Connect with players from all around the
+                                world, engage in friendly competition, and learn from
+                                others. Share your strategies, ask questions, and
+                                celebrate your wins with a community that understands
+                                the thrill of the game.
+                            </p>
+                        </div>
+                        <div class="creativity__card">
+                            <div class="creativity__card-ico">
+                                <img
+                                    src="./assets/images/icons/ico-heart.png"
+                                    alt="Heart"
+                                />
+                            </div>
+                            <p class="creativity__card-title">24/7 Customer Support</p>
+                            <p class="creativity__card-description">
+                                We’re committed to making your gaming experience as
+                                smooth as possible. If you ever need help, our 24/7
+                                customer support team is ready to assist you with any
+                                questions or concerns. From account inquiries to
+                                technical support, we ensure you get the help you need,
+                                when you need it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="players">
+                <div class="container">
+                    <div class="players__cards">
+                        <div class="players__card">
+                            <div class="players__card-name">
+                                <div class="logo">
+                                    <img
+                                        src="./assets/images/partner1.webp"
+                                        alt="Play"
+                                    />
+                                </div>
+                                <div class="stats">
+                                    <span>Vavada</span>
+                                    <span>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="#!" class="players__card-link">Play</a>
+                            <p class="players__card-description">
+                                200% on the first deposit up to €50,000, plus free bets
+                            </p>
+                            <div class="players__card-info">
+                                <span>
+                                    <svg
+                                        aria-hidden="true"
+                                        class="e-font-icon-svg e-fas-exclamation"
+                                        viewBox="0 0 192 512"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M176 432c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zM25.26 25.199l13.6 272C39.499 309.972 50.041 320 62.83 320h66.34c12.789 0 23.331-10.028 23.97-22.801l13.6-272C167.425 11.49 156.496 0 142.77 0H49.23C35.504 0 24.575 11.49 25.26 25.199z"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <span>Für neue Spieler</span>
+                            </div>
+                        </div>
+                        <div class="players__card">
+                            <div class="players__card-name">
+                                <div class="logo">
+                                    <img
+                                        src="./assets/images/partner1.webp"
+                                        alt="Play"
+                                    />
+                                </div>
+                                <div class="stats">
+                                    <span>Vavada</span>
+                                    <span>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="#!" class="players__card-link">Play</a>
+                            <p class="players__card-description">
+                                200% on the first deposit up to €50,000, plus free bets
+                            </p>
+                            <div class="players__card-info">
+                                <span>
+                                    <svg
+                                        aria-hidden="true"
+                                        class="e-font-icon-svg e-fas-exclamation"
+                                        viewBox="0 0 192 512"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M176 432c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zM25.26 25.199l13.6 272C39.499 309.972 50.041 320 62.83 320h66.34c12.789 0 23.331-10.028 23.97-22.801l13.6-272C167.425 11.49 156.496 0 142.77 0H49.23C35.504 0 24.575 11.49 25.26 25.199z"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <span>Für neue Spieler</span>
+                            </div>
+                        </div>
+                        <div class="players__card">
+                            <div class="players__card-name">
+                                <div class="logo">
+                                    <img
+                                        src="./assets/images/partner1.webp"
+                                        alt="Play"
+                                    />
+                                </div>
+                                <div class="stats">
+                                    <span>Vavada</span>
+                                    <span>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="#!" class="players__card-link">Play</a>
+                            <p class="players__card-description">
+                                200% on the first deposit up to €50,000, plus free bets
+                            </p>
+                            <div class="players__card-info">
+                                <span>
+                                    <svg
+                                        aria-hidden="true"
+                                        class="e-font-icon-svg e-fas-exclamation"
+                                        viewBox="0 0 192 512"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M176 432c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zM25.26 25.199l13.6 272C39.499 309.972 50.041 320 62.83 320h66.34c12.789 0 23.331-10.028 23.97-22.801l13.6-272C167.425 11.49 156.496 0 142.77 0H49.23C35.504 0 24.575 11.49 25.26 25.199z"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <span>Für neue Spieler</span>
+                            </div>
+                        </div>
+                        <div class="players__card">
+                            <div class="players__card-name">
+                                <div class="logo">
+                                    <img
+                                        src="./assets/images/partner1.webp"
+                                        alt="Play"
+                                    />
+                                </div>
+                                <div class="stats">
+                                    <span>Vavada</span>
+                                    <span>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="#!" class="players__card-link">Play</a>
+                            <p class="players__card-description">
+                                200% on the first deposit up to €50,000, plus free bets
+                            </p>
+                            <div class="players__card-info">
+                                <span>
+                                    <svg
+                                        aria-hidden="true"
+                                        class="e-font-icon-svg e-fas-exclamation"
+                                        viewBox="0 0 192 512"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M176 432c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zM25.26 25.199l13.6 272C39.499 309.972 50.041 320 62.83 320h66.34c12.789 0 23.331-10.028 23.97-22.801l13.6-272C167.425 11.49 156.496 0 142.77 0H49.23C35.504 0 24.575 11.49 25.26 25.199z"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <span>Für neue Spieler</span>
+                            </div>
+                        </div>
+                        <div class="players__card">
+                            <div class="players__card-name">
+                                <div class="logo">
+                                    <img
+                                        src="./assets/images/partner1.webp"
+                                        alt="Play"
+                                    />
+                                </div>
+                                <div class="stats">
+                                    <span>Vavada</span>
+                                    <span>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            aria-hidden="true"
+                                            class="e-font-icon-svg e-eicon-star"
+                                            viewBox="0 0 1000 1000"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="#!" class="players__card-link">Play</a>
+                            <p class="players__card-description">
+                                200% on the first deposit up to €50,000, plus free bets
+                            </p>
+                            <div class="players__card-info">
+                                <span>
+                                    <svg
+                                        aria-hidden="true"
+                                        class="e-font-icon-svg e-fas-exclamation"
+                                        viewBox="0 0 192 512"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M176 432c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zM25.26 25.199l13.6 272C39.499 309.972 50.041 320 62.83 320h66.34c12.789 0 23.331-10.028 23.97-22.801l13.6-272C167.425 11.49 156.496 0 142.77 0H49.23C35.504 0 24.575 11.49 25.26 25.199z"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <span>Für neue Spieler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="partner">
+                <div class="container">
+                    <div class="partner__row">
+                        <div class="col">
+                            <h2 class="partner__title">
+                                Your Gaming Partner <br />
+                                – Here to Help!
+                            </h2>
+                            <p class="partner__description" style="margin-bottom: 15px">
+                                At Dragon Tiger, we believe in providing our players
+                                with the best possible experience, and that includes
+                                top-notch customer support. Whether you need assistance
+                                with your account, have questions about gameplay, or
+                                need help with payments, our dedicated support team is
+                                available around the clock to ensure you have a seamless
+                                experience.
+                            </p>
+        
+                            <p class="partner__description">
+                                No matter the issue, we’re just a click away – ready to
+                                provide fast and helpful solutions to keep you enjoying
+                                the game. We’re committed to offering the best service,
+                                so you can focus on what matters most: winning and
+                                having fun!
+                            </p>
+                            <a class="partner__link" href="#!">Play</a>
+                        </div>
+                        <div class="col">
+                            <div class="partner__card">
+                                <div class="partner__card-ico">
+                                    <img
+                                        src="./assets/images/icons/ico-row.png"
+                                        alt="Icon"
+                                    />
+                                </div>
+                                <div class="partner__card-info">
+                                    <h3 class="partner__card-title">
+                                        24/7 Customer Support – Always Here for You
+                                    </h3>
+                                    <p class="partner__card-descr">
+                                        At Dragon Tiger, we understand that seamless
+                                        gameplay goes hand in hand with excellent
+                                        customer service. That’s why our dedicated
+                                        support team is available around the clock to
+                                        help you with any queries or issues you may
+                                        have.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="partner__card">
+                                <div class="partner__card-ico">
+                                    <img
+                                        src="./assets/images/icons/ico-proc.png"
+                                        alt="Icon"
+                                    />
+                                </div>
+                                <div class="partner__card-info">
+                                    <h3 class="partner__card-title">
+                                        Instant Assistance Anytime, Anywhere
+                                    </h3>
+                                    <p class="partner__card-descr">
+                                        Whether you’re facing a technical issue, need
+                                        help with deposits or withdrawals, or simply
+                                        have a question about the game, our team is here
+                                        to provide fast, effective solutions. No matter
+                                        the time of day, we’re ready to assist you.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="partner__card">
+                                <div class="partner__card-ico">
+                                    <img
+                                        src="./assets/images/icons/ico-run.png"
+                                        alt="Icon"
+                                    />
+                                </div>
+                                <div class="partner__card-info">
+                                    <h3 class="partner__card-title">
+                                        How to Contact Us
+                                    </h3>
+                                    <p class="partner__card-descr">
+                                        Getting in touch with our team is easy! Reach us
+                                        via live chat, email, or our support form. We’re
+                                        always happy to assist you and provide the help
+                                        you need to enhance your Dragon Tiger
+                                        experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partner__row">
+                        <div class="partner__thumb">
+                            <img src="./assets/images/dragon.webp" alt="Dragon" />
+                        </div>
+                        <div class="partner__info">
+                            <h3 class="partner__info-title">
+                                Unmatched Support for a Smooth Experience
+                            </h3>
+                            <p class="partner__info-descr" style="margin-bottom: 15px">
+                                At Dragon Tiger, we pride ourselves on offering 100%
+                                dedicated customer support around the clock. Whether you
+                                need help with account issues, game rules, or payment
+                                processes, our team is here to ensure that you have a
+                                seamless experience. You can always count on us for
+                                fast, friendly, and professional service.
+                            </p>
+                            <p class="partner__info-descr">
+                                We’re available 24/7, ensuring that no matter when you
+                                play, you’ll have the assistance you need. Your
+                                satisfaction is our priority, and we are committed to
+                                providing support that helps you focus on the game
+                                without any worries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__slider swiper">
+                        <div class="reviews__slider-wrapper swiper-wrapper">
+                            <div class="reviews__slider-slide swiper-slide">
+                                <p class="text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Consequatur necessitatibus non et quisquam
+                                    tempore! Ex ea accusamus quo magnam maxime autem
+                                    doloremque sed numquam eos sint magni, animi
+                                    perspiciatis facere?
+                                </p>
+                                <p class="author">Lorem Lorem</p>
+                            </div>
+                            <div class="reviews__slider-slide swiper-slide">
+                                <p class="text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Consequatur necessitatibus non et quisquam
+                                    tempore! Ex ea accusamus quo magnam maxime autem
+                                    doloremque sed numquam eos sint magni, animi
+                                    perspiciatis facere?
+                                </p>
+                                <p class="author">Lorem Lorem</p>
+                            </div>
+                            <div class="reviews__slider-slide swiper-slide">
+                                <p class="text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Consequatur necessitatibus non et quisquam
+                                    tempore! Ex ea accusamus quo magnam maxime autem
+                                    doloremque sed numquam eos sint magni, animi
+                                    perspiciatis facere?
+                                </p>
+                                <p class="author">Lorem Lorem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__pagination"></div>
+                    <script>
+                        const reviewsSlider = new Swiper('.reviews__slider', {
+                            sliderPerView: 1,
+                            autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: true,
+                            },
+                            spaceBetween: 30,
+                            pagination: {
+                                clickable: true,
+                                el: '.reviews__pagination',
+                            },
+                            grabCursor: true,
+                        });
+                    </script>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer__info">
+                            <div class="footer__info-logo">
+                                <img src="./assets/images/icons/dr-logo.webp" alt="Logo">
+                            </div>
+                            <p class="footer__info-text">
+                                Master the Game, Unlock Your Luck, and Win Like Never
+                                Before – Dragon Tiger is the Ultimate Adventure for
+                                Every Player!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <nav class="footer__nav" aria-labelledby="nav-title-1">
+                            <p id="nav-title-1" class="footer__nav-title">Navigation</p>
+                            <ul class="footer__nav-list">
+                                <li><a href="#!">Privacy Policy</a></li>
+                                <li><a href="#!">Terms and Conditions</a></li>
+                                <li><a href="#!">Contact</a></li>
+                                <li><a href="#!">FAQs</a></li>
+                            </ul>
+                        </nav>
+        
+                        <nav class="footer__nav" aria-labelledby="nav-title-2">
+                            <p id="nav-title-2" class="footer__nav-title">Quick Link</p>
+                            <ul class="footer__nav-list">
+                                <li><a href="#!">About Us</a></li>
+                                <li><a href="#!">Blog</a></li>
+                                <li><a href="#!">Bonus</a></li>
+                                <li><a href="#!">Demo</a></li>
+                            </ul>
+                        </nav>
+        
+                        <nav class="footer__nav" aria-labelledby="nav-title-3">
+                            <p id="nav-title-3" class="footer__nav-title">
+                                Our contacts
+                            </p>
+                            <ul class="footer__nav-list">
+                                <li>
+                                    <span class="ico">
+                                        <img src="../assets/images/icons/ico-phone.png" alt="Phone">
+                                    </span>
+                                    <a href="tel:+00000000">+0 000 00 00</a>
+                                </li>
+                                <li>
+                                    <span class="ico">
+                                        <img src="../assets/images/icons/ico-mail.png" alt="Mail">
+                                    </span>
+                                    <a href="mailto:example@ex.com">example@ex.com</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="footer__copy">Copyright © 2025 Dragon Tiger</p>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
