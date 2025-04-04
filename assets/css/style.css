@@ -452,7 +452,7 @@ a {
   font-weight: 400
 }
 .page--home .intro {
-  background: #000 url(/assets/images/bg-intro.webp) no-repeat center center/cover;
+  background: #000 url('../images/bg-intro.webp') no-repeat center center/cover;
   padding-block: 120px;
   position: relative
 }
